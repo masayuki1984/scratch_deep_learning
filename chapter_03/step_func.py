@@ -33,3 +33,5 @@ plt.plot(x, y)
 # y軸の範囲を指定
 plt.ylim(-0.1, 5.0)
 plt.show()
+
+
