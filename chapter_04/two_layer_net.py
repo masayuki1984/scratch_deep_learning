@@ -46,10 +46,10 @@ class TwoLayerNet:
         loss_W = lambda W: self.loss(x, t)
 
         grads = dict()
-        grads['W1'] = numerical_gradient(loss_W, self.param['W1'])
-        grads['b1'] = numerical_gradient(loss_W, self.param['b1'])
-        grads['W2'] = numerical_gradient(loss_W, self.param['W2'])
-        grads['b2'] = numerical_gradient(loss_W, self.param['b2'])
+        grads['W1'] = numerical_gradient(loss_W, self.params['W1'])
+        grads['b1'] = numerical_gradient(loss_W, self.params['b1'])
+        grads['W2'] = numerical_gradient(loss_W, self.params['W2'])
+        grads['b2'] = numerical_gradient(loss_W, self.params['b2'])
 
         return grads
 
